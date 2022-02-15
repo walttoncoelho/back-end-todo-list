@@ -1,4 +1,4 @@
-const port = process.env.PORT || 3003;
+const port = process.env.PORT || 3001;
 
 const bodyParser = require('body-parser');
 const express = require('express');
@@ -11,3 +11,5 @@ server.use(bodyParser.json());
 server.listen(port, function() {
   console.log('Server listening on port ' + port);
 }   );
+
+module.exports = server;
